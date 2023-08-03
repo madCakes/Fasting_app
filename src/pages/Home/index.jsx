@@ -3,10 +3,10 @@ import { Main, Navbar } from "../../components";
 
 const Home = () => {
   return (
-    <>
+    <main className="h-full bg-emerald-600">
       <Navbar />
       <Main />
-    </>
+    </main>
   );
 };
 

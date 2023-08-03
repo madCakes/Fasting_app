@@ -5,22 +5,22 @@ import clock from "../../assets/clock.svg";
 
 const Navbar = () => {
   return (
-    <navbar className="flex  justify-between">
-      {/* Left total days fasted*/}
+    <navbar className="flex justify-between p-1 mt-4 mx-4">
+      {/* Left: total days fasted*/}
 
       <div className="flex">
-        <img className="w-10" src={star} />
-        <p>star counter</p>
+        <img className="w-7" src={star} />
+        <p className="m-1">10</p>
       </div>
-      {/* Middle */}
+      {/* Middle: consecutive days fasted */}
       <div className="flex">
-        <img className="w-10" src={fire} />
-        <p>daily streak</p>
+        <img className="w-6" src={fire} />
+        <p className="m-1">10</p>
       </div>
-      {/* Right */}
+      {/* Right: lifetime total fasted hours */}
       <div className="flex">
-        <img className="w-10" src={clock} />
-        <p>hours fasted</p>
+        <img className="w-7 mt-1" src={clock} />
+        <p className="m-1">10</p>
       </div>
     </navbar>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const Main = () => {
   return (
-    <main className="flex flex-col mt-2 mx-5">
+    <section className="flex flex-col mt-2 mx-5">
       <div className="flex p-2 border-solid border-2 border-slate-900 rounded">
         <div className="m-1">Fasting chart</div>
         <div className="m-1">
@@ -34,7 +34,7 @@ const Main = () => {
           <img src="" alt="+" />
         </button>
       </div>
-    </main>
+    </section>
   );
 };
 

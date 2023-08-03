@@ -5,7 +5,7 @@ import clock from "../../assets/clock.svg";
 
 const Navbar = () => {
   return (
-    <navbar className="flex justify-between p-1 mt-4 mx-4">
+    <navbar className="flex justify-between p-1 pt-2 mx-4">
       {/* Left: total days fasted*/}
 
       <div className="flex">

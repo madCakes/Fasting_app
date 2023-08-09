@@ -1,10 +1,10 @@
 import React from "react";
-import { Main, Navbar } from "../../components";
+import { Main, Header } from "../../components";
 
 const Home = () => {
   return (
     <main className="h-screen bg-emerald-600">
-      <Navbar />
+      <Header />
       <Main />
     </main>
   );

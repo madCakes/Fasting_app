@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { Home, Login, Entry } from "./pages";
+import { Home, Login, Entry, Fast } from "./pages";
 import { DataProvider } from "./context";
 import ProtectedRoute from "./routes";
 
@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<ProtectedRoute redirectTo="/login" />}>
           <Route index element={<Home />}></Route>
           <Route path="/entry" element={<Entry />}></Route>
+          <Route path="/fast" element={<Fast />}></Route>
         </Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="*" element={<h1>Uh Oh...</h1>}></Route>

@@ -1,11 +1,13 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
+
 import { Header, Footer } from "../../components";
 
-const MainLayout = ({ children }) => {
+const MainLayout = () => {
   return (
     <div className="h-screen bg-emerald-600">
       <Header />
-      {children}
+      <Outlet />
       <Footer />
     </div>
   );

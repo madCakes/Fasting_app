@@ -1,16 +1,19 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import * as Pages from "./pages";
+import { Home, Login, Entry } from "./pages";
 import { DataProvider } from "./context";
+import ProtectedRoute from "./routes";
 
 function App() {
   return (
     <DataProvider>
       <Routes>
-        <Route index element={<Pages.Login />}></Route>
-        <Route path="/home" element={<Pages.Home />}></Route>
-        <Route path="/entry" element={<Pages.Entry />}></Route>
+        <Route path="/" element={<ProtectedRoute redirectTo="/login" />}>
+          <Route index element={<Home />}></Route>
+          <Route path="/entry" element={<Entry />}></Route>
+        </Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="*" element={<h1>Uh Oh...</h1>}></Route>
       </Routes>
     </DataProvider>

@@ -1,13 +1,14 @@
 import React from "react";
 import { Header, Footer } from "../../components";
 
-const index = () => {
+const MainLayout = ({ children }) => {
   return (
-    <div>
+    <div className="h-screen bg-emerald-600">
       <Header />
+      {children}
       <Footer />
     </div>
   );
 };
 
-export default index;
+export default MainLayout;

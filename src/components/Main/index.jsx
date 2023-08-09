@@ -7,7 +7,7 @@ const Main = () => {
         <div className="m-1">Fasting chart</div>
         <div className="m-1">
           <p></p>
-          <p>fasting time remaining </p>
+          <h1>fasting time remaining </h1>
           <button className="p-1 bg-slate-900 rounded text-white">
             End fasting
           </button>

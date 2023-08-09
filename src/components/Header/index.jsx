@@ -3,9 +3,9 @@ import star from "../../assets/star.svg";
 import fire from "../../assets/fire.svg";
 import clock from "../../assets/clock.svg";
 
-const Navbar = () => {
+const Header = () => {
   return (
-    <navbar className="flex justify-between p-1 pt-2 mx-4">
+    <section className="flex justify-between p-1 pt-2 mx-4">
       {/* Left: total days fasted*/}
 
       <div className="flex">
@@ -22,8 +22,8 @@ const Navbar = () => {
         <img className="w-7 mt-1" src={clock} />
         <p className="m-1">10</p>
       </div>
-    </navbar>
+    </section>
   );
 };
 
-export default Navbar;
+export default Header;

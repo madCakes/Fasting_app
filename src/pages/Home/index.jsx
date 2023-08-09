@@ -3,8 +3,7 @@ import { Main, Header } from "../../components";
 
 const Home = () => {
   return (
-    <main className="">
-      <Header />
+    <main>
       <Main />
     </main>
   );

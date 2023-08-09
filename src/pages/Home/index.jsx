@@ -3,7 +3,7 @@ import { Main, Header } from "../../components";
 
 const Home = () => {
   return (
-    <main className="h-screen bg-emerald-600">
+    <main className="">
       <Header />
       <Main />
     </main>

@@ -1,21 +1,23 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import star from "../../assets/star.svg";
 
 const Footer = () => {
   return (
     <navbar className="flex justify-around p-1 pt-2 mx-4 pb-2 absolute inset-x-0 bottom-0">
-      <div className="flex flex-col">
+      <NavLink to="/" className="flex flex-col w-full py-2">
         <img className="w-7 mx-auto my-1" src={star} alt="Today" />
-        <p>Today</p>
-      </div>
-      <div className="flex flex-col">
+        <p className="m-auto">Today</p>
+      </NavLink>
+      <NavLink to="/fast" className="flex flex-col w-full py-2">
         <img className="w-7 mx-auto my-1" src={star} alt="Fast" />
-        <p>Fast</p>
-      </div>
-      <div className="flex flex-col">
+        <p className="m-auto">Fast</p>
+      </NavLink>
+      <NavLink to="/profile" className="flex flex-col w-full py-2">
         <img className="w-7 mx-auto my-1" src={star} alt="Profile" />
-        <p>Profile</p>
-      </div>
+        <p className="m-auto">Profile</p>
+      </NavLink>
     </navbar>
   );
 };

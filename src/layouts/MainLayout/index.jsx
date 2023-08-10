@@ -5,7 +5,7 @@ import { Header, Footer } from "../../components";
 
 const MainLayout = () => {
   return (
-    <div className="h-screen bg-emerald-600">
+    <div className="h-screen bg-emerald-600 relative">
       <Header />
       <Outlet />
       <Footer />

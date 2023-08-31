@@ -1,12 +1,15 @@
 import { React, useState } from "react";
 
+import { WeightForm } from "../";
+
 const Main = () => {
   const [water, setWater] = useState(0);
   const [weight, setWeight] = useState(0);
   const [steps, setSteps] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const toggleForm = () => {
+    setIsOpen((isOpen) => !isOpen);
   };
 
   return (
@@ -41,23 +44,7 @@ const Main = () => {
         <button>
           <img src="" alt="+" />
         </button>
-        <form onSubmit={handleSubmit} className="flex flex-row">
-          <input
-            className="mx-2 px-1 rounded"
-            id="weight"
-            type="number"
-            max="500"
-          />
-          <p>.</p>
-          <input className="mx-2 px-1 rounded" type="number" max="9" />
-          <label htmlFor="weight">lbs</label>
-          <button
-            className="mx-2 border border-solid rounded px-1 pb-1"
-            type="submit"
-          >
-            save
-          </button>
-        </form>
+        <WeightForm />
       </div>
     </section>
   );

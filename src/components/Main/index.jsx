@@ -1,6 +1,14 @@
-import React from "react";
+import { React, useState } from "react";
 
 const Main = () => {
+  const [water, setWater] = useState(0);
+  const [weight, setWeight] = useState(0);
+  const [steps, setSteps] = useState(0);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section className="flex flex-col mt-2 mx-5">
       <div className="flex p-2 border-solid border-2 border-slate-900 rounded">
@@ -33,6 +41,23 @@ const Main = () => {
         <button>
           <img src="" alt="+" />
         </button>
+        <form onSubmit={handleSubmit} className="flex flex-row">
+          <input
+            className="mx-2 px-1 rounded"
+            id="weight"
+            type="number"
+            max="500"
+          />
+          <p>.</p>
+          <input className="mx-2 px-1 rounded" type="number" max="9" />
+          <label htmlFor="weight">lbs</label>
+          <button
+            className="mx-2 border border-solid rounded px-1 pb-1"
+            type="submit"
+          >
+            save
+          </button>
+        </form>
       </div>
     </section>
   );

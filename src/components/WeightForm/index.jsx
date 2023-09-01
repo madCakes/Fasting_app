@@ -13,9 +13,11 @@ const WeightForm = () => {
         type="number"
         max="500"
       />
-      <p>.</p>
-      <input className="mx-2 px-1 rounded" type="number" max="9" />
-      <label htmlFor="weight">lbs</label>
+      <label htmlFor="decimal">.</label>
+      <input className="mx-2 px-1 rounded" id="decimal" type="number" max="9" />
+      <label className="pt-[0.125rem]" htmlFor="weight">
+        lbs
+      </label>
       <button
         className="mx-2 border-2 border-solid rounded px-1 pb-1"
         type="submit"

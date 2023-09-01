@@ -12,9 +12,16 @@ const WeightForm = () => {
         id="weight"
         type="number"
         max="500"
+        placeholder="000"
       />
       <label htmlFor="decimal">.</label>
-      <input className="mx-2 px-1 rounded" id="decimal" type="number" max="9" />
+      <input 
+        className="mx-2 px-1 rounded"
+        id="decimal" 
+        type="number" 
+        max="9" 
+        placeholder="0"
+      />
       <label className="pt-[0.125rem]" htmlFor="weight">
         lbs
       </label>

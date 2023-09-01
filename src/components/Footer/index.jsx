@@ -5,7 +5,7 @@ import star from "../../assets/star.svg";
 
 const Footer = () => {
   return (
-    <navbar className="flex justify-around p-1 pt-2 mx-4 pb-2 absolute inset-x-0 bottom-0">
+    <nav className="flex justify-around p-1 pt-2 mx-4 pb-2 absolute inset-x-0 bottom-0">
       <NavLink
         to="/"
         className="flex flex-col w-full py-2  mx-2 border-solid border-slate-900 border-2 rounded"
@@ -27,7 +27,7 @@ const Footer = () => {
         <img className="w-7 mx-auto my-1" src={star} alt="Profile" />
         <p className="m-auto">Profile</p>
       </NavLink>
-    </navbar>
+    </nav>
   );
 };
 

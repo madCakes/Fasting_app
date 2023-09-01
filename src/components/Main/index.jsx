@@ -12,14 +12,15 @@ const Main = () => {
     setIsOpen((isOpen) => !isOpen);
   };
 
+  const timeRemaining = "00:00:00"
   return (
     <section className="flex flex-col mt-2 mx-5">
       <div className="flex p-2 border-solid border-2 border-slate-900 rounded">
-        <div className="m-1">Fasting chart</div>
+        <div className="my-auto mx-10">Fasting chart</div>
         <div className="m-1">
-          <p></p>
+          <p className="text-xl">{timeRemaining}</p>
           <h1>fasting time remaining </h1>
-          <button className="p-1 bg-slate-900 rounded text-white">
+          <button className="p-5 bg-slate-900 rounded text-white">
             End fasting
           </button>
         </div>

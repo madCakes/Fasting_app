@@ -41,10 +41,10 @@ const Main = () => {
       <div className="mt-2 p-2 border-solid border-2 border-slate-900 rounded">
         <p></p>
         <img src="" alt="weight" />
-        <button>
+        <button onClick={toggleForm}>
           <img src="" alt="+" />
         </button>
-        <WeightForm />
+        {isOpen && <WeightForm />}
       </div>
     </section>
   );
